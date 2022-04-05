@@ -1,36 +1,31 @@
-#----------------------------------------------------------------------------- 
-# Lecture 04 (Week 2): Example code
-# Credits: Parts of this code come from Kyle Thayer <kmthayer@uw.edu>. 
-#-----------------------------------------------------------------------------
-# This removes all variables (also known as "memory cells")
+# This removes all existing variables from the Global Environment
 rm(list=ls())
 
+# You made a guest appearance in a Canadian TV show, and you got paid 250 Canadian dollars! Sweet! Wait, is that a lot?
+
+# Let's create a function called cnd_to_usd() that converts currency from Canadian dollars to US dollars
+# 1 Canadian dollar = 0.80 United States dollars
+
 # STEP 1: DEFINE A FUNCTION
+# Fill in the necessary code below to create the function
 
-# You just got paid 250 Canadian dollars! Sweet! Wait, is that a lot?
-
-# Let's create a function that converts currency from Canadian dollars to US dollars
-# Exchange rate as of January 9, 2022
-
-
-cnd_to_usd <- function(cnd_amount) {
+a variable here <- function(argument / input value here) {
   
-  us_value <- 0.79 * cnd_amount
+  us_value <- exchange rate * cnd_amount
   
-  # Fill in missing code here
-}
+
 
 # STEP 2: USE AND TEST THE FUNCTION
-my_canadian_funds <- # Fill in amount of Canadian money
+# Save this variable
+my_canadian_payout <- 250
 
-how_much_in_usd <- cnd_to_usd(my_canadian_funds)
+# Run the function and save the value in this variable
+usd_payout <- cnd_to_usd(my_canadian_payout)
 
-print(how_much_in_usd)
+# Print out the value
+print(usd_payout)
 
 # What happens if we try to print out the following variables?
-# Do you see these variables in the global environment grid to the right? 
-# IMPORTANT: You should know the answer to these questions.
 print(cnd_amount)
-print(us_value)
-
-
+print(us_payout)
+# Do you see these variables in the global environment grid to the right? Why or why not? What does that mean?
