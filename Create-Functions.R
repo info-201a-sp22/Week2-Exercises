@@ -9,11 +9,11 @@ rm(list=ls())
 # STEP 1: DEFINE A FUNCTION
 # Fill in the necessary code below to create the function
 
-a variable here <- function(argument / input value here) {
+cnd_to_usd <- function(cnd_amount) {
   
-  us_value <- exchange rate * cnd_amount
-  
-
+  us_value <- .8 * cnd_amount
+  us_value
+}
 
 # STEP 2: USE AND TEST THE FUNCTION
 # Save this variable
